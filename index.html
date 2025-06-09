@@ -118,7 +118,7 @@
                     seconds = String(seconds).padStart(2, "0");
 
                     timeDisplay.innerHTML = `${minutes}:${seconds}`;
-            }, 1)
+            }, 1000)
             }
             else{
                 clearInterval(on);
@@ -135,7 +135,7 @@
                             audio.play();
                             document.body.style.backgroundColor =
                                 document.body.style.backgroundColor === "red" ? "#2e7ec5" : "red";
-                        }, 1000);
+                        }, 2000);
 
                         return;
                     }
